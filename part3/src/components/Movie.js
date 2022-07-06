@@ -17,6 +17,7 @@ function Movie(props) {
       // On remplace le state boolean 'likeMovie' par la nouvelle props : movieSeen, aussi un boolean. 
       // Un conditionel attend un boolean, peu importe qu'il vienne d'un state (local) ou une props (parent).
     if(!props.movieSeen) {
+      //if movieSeen = false
       props.handleClickAddMovieParent(name, img)
     } else {
       props.handleClickDeleteMovieParent(name)
@@ -35,6 +36,7 @@ function Movie(props) {
   var likeColor;
       // On remplace le state boolean 'likeMovie' par la nouvelle props : movieIsNotSeen
   if (props.movieSeen) {
+    //if movieSeen = true
     likeColor = { color: '#e74c3c', cursor: 'pointer' }
   } else {
     likeColor = { color: '#5A4C1C', cursor: 'pointer' }
