@@ -54,7 +54,8 @@ function App() {
   //// Création du tableau movieList ////
   var movieList = moviesData.map((elementMap, index) => {
     
-    // On transforme le push principal avec une nouvelle props 'movieSeen', qui va remplacer le state 'likeMovie' dans Movie.js (une props ou un state, c'est la même chose, tous les deux contiennent juste de la data)
+    // On transforme le push principal avec une nouvelle props 'movieSeen', qui va remplacer le state 'likeMovie' dans Movie.js 
+    // (une props ou un state, c'est la même chose, tous les deux contiennent juste de la data)
     var result = moviesWishList.find(elementFind => elementFind.name === elementMap.name)
     var seenMovie = true
     // Si la wishlist dans le Popover ne contient pas le film, alors le film n'a pas été vu 
@@ -63,7 +64,11 @@ function App() {
     }
 
     return(
-      <Movie key={index} movieSeen={seenMovie} movieName={elementMap.name} movieDesc={elementMap.desc} movieImg={elementMap.img} globalRating={elementMap.note} globalCountRating={elementMap.vote} handleClickAddMovieParent={handleClickAddMovie} handleClickDeleteMovieParent={handleClickDeleteMovie}/>
+      <Movie key={index} movieSeen={seenMovie} movieName={elementMap.name} 
+      movieDesc={elementMap.desc} movieImg={elementMap.img} 
+      globalRating={elementMap.note} globalCountRating={elementMap.vote} 
+      handleClickAddMovieParent={handleClickAddMovie} 
+      handleClickDeleteMovieParent={handleClickDeleteMovie}/>
     )
   })
     

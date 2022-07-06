@@ -14,7 +14,8 @@ function Movie(props) {
   var handleClickLike = (name, img) => {
       // setLikeMovie(!likeMovie) 
     
-      // On remplace le state boolean 'likeMovie' par la nouvelle props : movieSeen, aussi un boolean. Un conditionel attend un boolean, peu importe qu'il vienne d'un state (local) ou une props (parent).
+      // On remplace le state boolean 'likeMovie' par la nouvelle props : movieSeen, aussi un boolean. 
+      // Un conditionel attend un boolean, peu importe qu'il vienne d'un state (local) ou une props (parent).
     if(!props.movieSeen) {
       props.handleClickAddMovieParent(name, img)
     } else {
