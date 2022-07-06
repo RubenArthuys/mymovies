@@ -82,21 +82,21 @@ function App() {
           <NavbarBrand href="/" style={{ color: '#3A3B3C' }}> Latest Movies</NavbarBrand>
           <NavbarBrand href="/">
             <img src="img/logo.png" width="30" height="30"
-              className="d-inline-block align-top" alt="logo" />
+                 className="d-inline-block align-top" alt="logo" />
           </NavbarBrand>
 
           <Nav className="me-auto" navbar>
-              <DropdownToggle caret nav>
-                <Button type="button" id="Popover1">{moviesCount} movies</Button>
-              </DropdownToggle>
-              <Popover placement="bottom" isOpen={popoverOpen} target="Popover1" toggle={toggle}>
-                <PopoverHeader>WishList</PopoverHeader>
-                <PopoverBody>
-                  <ListGroup>
-                    {cardWish}
-                  </ListGroup>
-                </PopoverBody>
-              </Popover>
+            <DropdownToggle caret nav>
+              <Button type="button" id="Popover1">{moviesCount} movies</Button>
+            </DropdownToggle>
+            <Popover placement="bottom" isOpen={popoverOpen} target="Popover1" toggle={toggle}>
+              <PopoverHeader>WishList</PopoverHeader>
+              <PopoverBody>
+                <ListGroup>
+                  {cardWish}
+                </ListGroup>
+              </PopoverBody>
+            </Popover>
           </Nav>
           
         </Navbar>
