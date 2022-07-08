@@ -74,7 +74,7 @@ function App() {
     setMoviesCount(moviesCount - 1)
 
     // delete le film en base de donnée grâce à notre webservice :
-    await fetch(`/wishlist-movie/${deleteMovie}`, {
+    await fetch("/wishlist-movie/"+deleteMovie, {
       method : 'DELETE',
     })
   }
